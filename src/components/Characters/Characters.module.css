@@ -1,0 +1,108 @@
+.backgroundCharacters {
+	width: 100%;
+	background-color: rgb(16, 15, 26);
+}
+
+.arrow {
+	color: var(--primary);
+}
+
+:global(.slick-arrow.slick-prev) {
+	color: var(--primary);
+	transform: translate(0, -50%) rotate(-180deg);
+}
+
+:global(.slick-arrow.slick-prev):hover {
+	color: var(--primary);
+}
+
+:global(.slick-arrow.slick-next) {
+	color: var(--primary);
+}
+
+:global(.slick-arrow.slick-next):hover {
+	color: var(--primary);
+}
+
+.arrowPrev {
+	color: var(--primary);
+}
+
+.title {
+	font-family: var(--bleach-font);
+	width: 100%;
+	font-size: 40px;
+	text-align: center;
+	color: crimson;
+	margin: 80px 0 0 0;
+}
+
+.slider {
+	width: 350px;
+	display: flex;
+}
+
+.name {
+	font-family: 'Montserrat';
+	font-size: 32px;
+}
+
+.charInfos {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+
+	margin: 0 0 80px 0;
+}
+
+.japaneseName {
+	font-family: 'Noto Sans JP';
+	font-size: 20px;
+	margin: 5px 0;
+}
+
+.slider :global(.slick-slide) {
+	height: 300px;
+	width: 400px;
+	object-fit: contain;
+}
+
+.slider :global(.slick-slide div) {
+	object-fit: contain;
+}
+
+.slider :global(.slick-slide div img) {
+	width: 100%;
+	height: 300px;
+	object-fit: contain;
+}
+
+.afiliation {
+	width: 100%;
+	font-family: var(--bleach-font);
+	font-size: 32px;
+	text-align: center;
+}
+
+.sliderContainer {
+	margin: 0 auto;
+}
+
+.container {
+	margin-top: 20px;
+	padding: 0 16px;
+	font-family: 'Montserrat';
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+}
